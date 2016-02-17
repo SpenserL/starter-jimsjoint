@@ -9,19 +9,19 @@ The purpose of this lab is to practice some of the model techniques using Codeig
 SpenserL - Spenser Lee
 
 ##################
-### Server Requirements
+## Server Requirements
 ##################
 
 CodeIgniter 3.0
 
 ##################
-### License
+## License
 ##################
 
 Please see the [license agreement](https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst).
 
 ##################
-### Resources
+## Resources
 ##################
 
-[CodeIgniter](http://codeigniter.com)
+- [CodeIgniter](http://codeigniter.com)
