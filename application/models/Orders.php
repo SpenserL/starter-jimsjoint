@@ -61,7 +61,7 @@ class Orders extends MY_Model {
 
         $CI = & get_instance();
         $items = $CI->orderitems->group($num);
-        $goitem = array();
+        $gotem = array();
 
         if (count($items) > 0) {
             foreach ($items as $item) {
