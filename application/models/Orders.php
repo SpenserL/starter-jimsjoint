@@ -14,22 +14,33 @@ class Orders extends MY_Model {
 
     // add an item to an order
     function add_item($num, $code) {
-        
+
     }
 
     // calculate the total for an order
     function total($num) {
-        return 0.0;
+        $CI = & get_instance();
+        $items = $CI->orderitems->group($num);
+        $result = 0;
+
+        if (count($items) > 0) {
+            foreach ($items as $item) {
+                $menu= $CI->menu->get($item->item);
+                $result += $item->quantity * $menu->price;
+            }
+        }
+
+        return $result;
     }
 
     // retrieve the details for an order
     function details($num) {
-        
+
     }
 
     // cancel an order
     function flush($num) {
-        
+
     }
 
     // validate an order
